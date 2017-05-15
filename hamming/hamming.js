@@ -8,7 +8,7 @@ Hamming.prototype.compute = function compute(strand1, strand2) {
   }
 
   function getDifferences(char, index) {
-    return char === strand2[index] ? 0 : 1;
+    return char === strand2.charAt(index) ? 0 : 1;
   }
 
   function sumDifferences(sum, difference) {
