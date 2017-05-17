@@ -12,6 +12,7 @@ Pangram.prototype.isPangram = function isPangram() {
     .split('')
     .reduce(function(sentence_set, letter) {
       sentence_set[letter] = true;
+      return sentence_set;
     }, {});
 
   return Object.keys(sentence).length === this.ALPHABET_LENGTH;
