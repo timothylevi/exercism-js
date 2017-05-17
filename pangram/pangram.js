@@ -4,8 +4,6 @@ var Pangram = function(sentence) {
 };
 
 Pangram.prototype.isPangram = function isPangram() {
-  if (!this.value) return false;
-
   var sentence = this.value
     .replace(/[\d\W_]+/g)
     .toLowerCase()
